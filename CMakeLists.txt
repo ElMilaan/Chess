@@ -41,15 +41,5 @@ add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
     ${CMAKE_SOURCE_DIR}/shaders $<TARGET_FILE_DIR:${PROJECT_NAME}>/shaders
 )
 
-# include(FetchContent)
-# FetchContent_Declare(
-#     quick_imgui
-#     GIT_REPOSITORY https://github.com/dsmtE/quick_imgui
-#     GIT_TAG 462db5f449a38194e263fe3881e0348d204ea7f2
-# )
-# FetchContent_MakeAvailable(quick_imgui)
-# target_link_libraries(${PROJECT_NAME} PRIVATE quick_imgui::quick_imgui)
-
-# ---Add glm---
-add_subdirectory(lib/glm)
-target_link_libraries(${PROJECT_NAME} PRIVATE  glm)
+add_subdirectory(lib/glmax)
+target_link_libraries(${PROJECT_NAME} PRIVATE glmax)
