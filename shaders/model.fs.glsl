@@ -23,7 +23,7 @@ void main() {
     vec3 diffuseColor = useTexture ? texture(map_Kd, TexCoords).rgb : Kd;
 
     // Ambient
-    vec3 ambient = Ka * (lightColor * 0.25);
+    vec3 ambient = Ka * (lightColor * 0.05);
 
     // Diffuse
     vec3 L = normalize(lightPos - FragPos);

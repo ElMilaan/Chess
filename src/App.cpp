@@ -27,9 +27,9 @@ void App::render_info()
 
 void App::loadCustomFont()
 {
-    ImGuiIO& io = ImGui::GetIO();
+    ImGuiIO &io = ImGui::GetIO();
     io.Fonts->AddFontDefault();
-    io.Fonts->AddFontFromFileTTF("assets/fonts/tt_usual.ttf", 64.0f);
+    io.Fonts->AddFontFromFileTTF("assets/fonts/tt_usual.ttf", 32.0f);
 }
 
 void App::run()
