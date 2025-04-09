@@ -1,4 +1,4 @@
-#include "VBO.hpp"
+#include "../headers/buffers/VBO.hpp"
 
 void VBO::init()
 {
@@ -20,7 +20,7 @@ void VBO::unbind() const
     glBindBuffer(GL_ARRAY_BUFFER, 0);
 }
 
-void VBO::set_data(const void* data, GLsizeiptr size)
+void VBO::set_data(const void *data, GLsizeiptr size)
 {
     glBufferData(GL_ARRAY_BUFFER, size, data, GL_STATIC_DRAW);
 }

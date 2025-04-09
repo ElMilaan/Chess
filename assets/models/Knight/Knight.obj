@@ -1,6 +1,6 @@
 # Blender 4.2.3 LTS
 # www.blender.org
-mtllib Bishop.mtl
+mtllib Knight.mtl
 o Knight.001
 v -0.320954 1.504533 0.000000
 v -0.288054 1.563019 0.000000

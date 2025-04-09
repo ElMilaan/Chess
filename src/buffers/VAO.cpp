@@ -1,4 +1,4 @@
-#include "VAO.hpp"
+#include "../headers/buffers/VAO.hpp"
 
 VAO::VAO()
     : m_id(0) {}
