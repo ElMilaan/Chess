@@ -1,18 +1,11 @@
 cmake_minimum_required(VERSION 3.20)
-project(MilanChess)
+project(ProbaChess)
 
 # Crée l'exécutable principal
 add_executable(${PROJECT_NAME})
 
 # Choix du standard C++
 target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_20)
-
-# Options de compilation
-if(MSVC)
-    # target_compile_options(${PROJECT_NAME} PRIVATE /WX /W4)
-else()
-    # target_compile_options(${PROJECT_NAME} PRIVATE -Werror -Wall -Wextra -Wpedantic -pedantic-errors -Wimplicit-fallthrough)
-endif()
 
 # Définition du dossier de sortie des exécutables
 set_target_properties(${PROJECT_NAME} PROPERTIES
